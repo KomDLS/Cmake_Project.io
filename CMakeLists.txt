@@ -9,7 +9,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include(cmake/CPM.cmake)
 
-## Dépendances externes
+## DÃ©pendances externes
 CPMAddPackage(
     NAME Catch2
     GITHUB_REPOSITORY catchorg/Catch2
@@ -21,13 +21,13 @@ add_executable(CMakeProject1 CMakeProject1.cpp)
 
 enable_testing()
 
-# Création de l'exécutable
+# CrÃ©ation de l'exÃ©cutable
 add_executable(Test Truc.cpp)
 
-# Liaison des bibliothèques
+# Liaison des bibliothÃ¨ques
 target_link_libraries(Test PRIVATE Catch2::Catch2WithMain)
 #target_link_libraries(CMakeProject1 sfml-system sfml-window sfml-graphics sfml-audio sfml-network)
-find_package(SFML 3.0.0 REQUIRED COMPONENTS Graphics Audio Network System Main)
+find_package(SFML 3.0.2 REQUIRED COMPONENTS Graphics Audio Network System Main)
 target_link_libraries(CMakeProject1 SFML::Graphics SFML::Window SFML::Audio SFML::Network SFML::System SFML::Main)
 
 include(cmake/extras/Catch.cmake)
