@@ -20,5 +20,5 @@ float Q_rsqrt(float number)
 
 TEST_CASE("les racines carree inversee sont calculee", "[invertsquareroot]")
 {
-	REQUIRE(Q_rsqrt(3) == 0);
+	REQUIRE(Q_rsqrt(3) == 0); // machin
 }
