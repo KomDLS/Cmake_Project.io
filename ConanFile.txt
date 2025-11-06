@@ -1,0 +1,11 @@
+[requires]
+fmt/10.2.1
+sfml/2.6.2
+imgui-sfml/2.6.1
+
+[generators]
+CMakeDeps
+CMakeToolchain
+
+[layout]
+cmake_layout
