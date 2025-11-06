@@ -1,10 +1,9 @@
 ﻿// CMakeProject1.cpp : définit le point d'entrée de l'application.
-//
+
 #include <iostream>
 #include "SFML/Graphics.hpp"
 #include <optional>
 #include "CMakeProject1.h"
-
 
 int main()
 {
