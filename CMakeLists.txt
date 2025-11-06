@@ -17,7 +17,7 @@ CPMAddPackage(
     OPTIONS "CATCH_BUILD_TESTING OFF"
 )
 
-find_package(SFML 3.0.2 REQUIRED COMPONENTS Graphics Audio Network System Main)
+find_package(SFML 3.0.0 REQUIRED COMPONENTS Graphics Audio Network System Main)
 
 add_executable(CMakeProject1 CMakeProject1.cpp)
 
