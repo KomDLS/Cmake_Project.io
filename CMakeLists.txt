@@ -17,6 +17,8 @@ CPMAddPackage(
     OPTIONS "CATCH_BUILD_TESTING OFF"
 )
 
+find_package(SFML 3.0.2 REQUIRED COMPONENTS Graphics Audio Network System Main)
+
 add_executable(CMakeProject1 CMakeProject1.cpp)
 
 enable_testing()
@@ -27,7 +29,6 @@ add_executable(Test Truc.cpp)
 # Liaison des bibliothèques
 target_link_libraries(Test PRIVATE Catch2::Catch2WithMain)
 #target_link_libraries(CMakeProject1 sfml-system sfml-window sfml-graphics sfml-audio sfml-network)
-find_package(SFML 3.0.2 REQUIRED COMPONENTS Graphics Audio Network System Main)
 target_link_libraries(CMakeProject1 SFML::Graphics SFML::Window SFML::Audio SFML::Network SFML::System SFML::Main)
 
 include(cmake/extras/Catch.cmake)
